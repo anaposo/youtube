@@ -7,21 +7,31 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="file.css">
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>Hello!</title>
   </head>
   <body>
     <div class="containter-fluid">
-    <h1>Hello, world!</h1>
     <div class="row">
-        <div class="col-md-8">
-          <video src="video.mp4" controls= "controls" tabindex="0" autoplay="autoplay" height="500"></video>
-   </div>
+      <div class="col-md-8">
+        <h1>YouTube</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <video id="my_video_1" class="video-js vjs-default-skin" width="889px" height="500px" controls preload="none" autoplay="auto" poster='http://video-js.zencoder.com/oceans-clip.jpg'>
+        <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+        <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+        </video>
+      </div>
+    </div>
   <div class="col-md-4">
-    hello there 
+    <h2>hello</h2> 
   </div>
   </div>
-
+<script src="video.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
