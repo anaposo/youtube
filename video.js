@@ -1,10 +1,8 @@
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
 $(function(){
   var $refreshButton = $('#refresh');
   var $results = $('#css_result');
-  videojs("my_video_1", { "controls": true, "autoplay": true, "preload": "auto" });
-var player = videojs('my_video_1');
-player.breakpoints(true);
-});
   
   function refresh(){
     var css = $('style.cp-pen-styles').text();
@@ -19,4 +17,4 @@ player.breakpoints(true);
     $(this).select();
   });
 });
-
+</script>
