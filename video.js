@@ -1,7 +1,4 @@
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script>
-$(function(){
-  var $refreshButton = $('#refresh');
+$(function(){ var $refreshButton = $('#refresh');
   var $results = $('#css_result');
   
   function refresh(){
@@ -17,4 +14,3 @@ $(function(){
     $(this).select();
   });
 });
-</script>
